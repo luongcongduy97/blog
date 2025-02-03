@@ -1,0 +1,18 @@
+<div id="<%= dom_id post %>">
+  <p>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </p>
+  <div style="display: flex">
+    <strong>Body:</strong>
+    <div style="padding-left: 10px">
+      <%= post.body %>
+    </div>
+  </div>
+
+  <p>
+    <strong>Updated at:</strong>
+    <%= time_tag post.updated_at, "data-local": "time", "data-format": "%B %e, %Y %l:%M%P" %>
+  </p>
+
+</div>
